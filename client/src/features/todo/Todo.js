@@ -18,31 +18,48 @@ export function Todo() {
   // const incrementValue = Number(incrementAmount) || 0;
 
   return (
-    <div className='container mx-auto'>
-      <div className='flex flex-row'>
-        <h1 className='h-1'>you've got 7 task today </h1>
-        <button >+Add new</button>
+    <div className='w-full h-full pt-4 pl-2'>
+      <div className='flex flex-row mb-6 justify-between'>
+        <h1 className='text-3xl'>you've got 7 task today </h1>
+        <button >+Add</button>
       </div>
-      <div>
-        <div>on hold</div>
-        <div className='flex flex-row flex-wrap'>
-          <div className='basis-1/2'>Indentify the implementation team</div>
-          <div className='basis-1/6' >pending</div>
-          <div className='basis-1/6'>minor</div>
-          <div className='basis-1/12'><button>Edit</button></div>
+      <div className='h-1/4'>
+        <div className='flex justify-between py-2'>
+          <h3 className='text-xl'>Pending</h3>
+          <div>
+            <input type='text' />
+            <button type='button'>Search</button>
+          </div>
         </div>
-      </div>
-      <div>
-        <div>Completed</div>
-        <div className='flex flex-row flex-wrap'>
-          <div className='basis-1/2'>Indentify the implementation team</div>
-          <div className='basis-1/6' >Completed</div>
-          <div className='basis-1/6'>minor</div>
-          <div className='basis-1/12'><button>Edit</button></div>
-        </div>
+        <ul>
+          <li className='justify-between flex border-b pb-3'>
+            <ul className='list-none inline-flex'>
+              <input type='checkbox' className='m-1'/>
+              <li>Indentify the implementation team</li>
+            </ul>
+            <span>Edit</span>
+          </li>
+        </ul>
       </div>
 
-
+      <div>
+        <div className='flex justify-between py-2'>
+          <h3 className='text-xl'>Completed</h3>
+          <div>
+            <input type='text' />
+            <button type='button'>Search</button>
+          </div>
+        </div>
+        <ul>
+          <li className='justify-between flex border-b pb-3'>
+            <ul className='list-none inline-flex'>
+              <input type='checkbox' className='m-1'/>
+              <li>Indentify the implementation team</li>
+            </ul>
+            <span>Edit</span>
+          </li>
+        </ul>
+      </div>
 
 
       {/* <div className={styles.row}>

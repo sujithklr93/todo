@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root{
+    height: 100vh;
+}
+.left-panel-group .active{
+    background-color: #00ff50;
+}
+
+.font-mono {
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+}
+.w-1240{
+    width: 1240px;
+}

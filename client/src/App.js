@@ -1,10 +1,9 @@
-import { Todo } from "./features/todo/Todo";
+import HomeComponent from "./features/home/home";
 import "./index.css"
 function App() {
   return (
-    <div >
-      My APP
-      <Todo />
+    <div className="h-full flex justify-center w-full">
+    <HomeComponent />
     </div>
   );
 }
